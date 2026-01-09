@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerKing PSPK | Official Hub</title>
+    <!-- Importing Google Fonts for a Gaming look -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Importing Icons (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* CSS STYLES - Design and Colors */
+        :root {
+            --primary-color: #ff0055; /* Gaming Red/Pink */
+            --bg-color: #0f0f12;      /* Dark Background */
+            --card-bg: #1e1e24;       /* Lighter Dark for cards */
+            --text-color: #ffffff;
+            --discord-color: #5865F2;
+            --insta-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: rgba(0,0,0,0.8);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid var(--primary-color);
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section (Intro) */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: radial-gradient(circle at center, #2a2a35 0%, #0f0f12 70%);
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .hero-btn:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Section Styling */
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        /* Video Section */
+        .video-container {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .responsive-iframe {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Social Media Section */
+        .social-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .social-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-card i {
+            font-size: 2rem;
+            margin-right: 15px;
+            width: 40px;
+            text-align: center;
+        }
+
+        /* Specific Social Colors */
+        .instagram {
+            border: 1px solid #e1306c;
+        }
+        .instagram:hover {
+            background: var(--insta-gradient);
+        }
+
+        .discord {
+            border: 1px solid var(--discord-color);
+        }
+        .discord:hover {
+            background-color: var(--discord-color);
+        }
+
+        /* Youtube Button Style */
+        .youtube-link {
+            border: 1px solid #FF0000;
+        }
+        .youtube-link:hover {
+            background-color: #FF0000;
+        }
+        .youtube-link i { color: #FF0000; }
+        .youtube-link:hover i { color: white; }
+
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #000;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <header>
+        <div class="logo">POWERKING PSPK</div>
+    </header>
+
+    <!-- Hero / Intro -->
+    <section class="hero">
+        <h1>GAME. STREAM. CONQUER.</h1>
+        <p>Welcome to the official hub of PowerKing PSPK. <br>Live streams, epic moments, and gaming history.</p>
+        <a href="#socials" class="hero-btn">Join the Community</a>
+    </section>
+
+    <div class="container">
+        
+        <!-- Latest Content Section -->
+        <section id="videos">
+            <h2 class="section-title">Latest Stream / Video</h2>
+            <div class="video-container">
+                <p style="margin-bottom:10px;">Check out my latest content:</p>
+                
+                <!-- YOUTUBE EMBED START -->
+                <!-- IMPORTANT: Replace the URL below with your specific video embed code later -->
+                <div class="responsive-iframe">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- YOUTUBE EMBED END -->
+
+                <p>Don't forget to Subscribe and hit the bell icon!</p>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section id="socials">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="social-grid">
+                
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/powerking_pspk?igsh=MWZzdnV3ODVnenM5Zw==" target="_blank" class="social-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <h3>Follow on Instagram</h3>
+                        <small>@powerking_pspk</small>
+                    </div>
+                </a>
+
+                <!-- Discord Link -->
+                <a href="https://discord.gg/nYW8fh8bAR" target="_blank" class="social-card discord">
+                    <i class="fab fa-discord"></i>
+                    <div>
+                        <h3>Join Discord Server</h3>
+                        <small>Chat with the squad</small>
+                    </div>
+                </a>
+
+                <!-- YouTube Channel Link (Placeholder) -->
+                <!-- Replace '#' with your actual YouTube Channel URL -->
+                <a href="#" target="_blank" class="social-card youtube-link">
+                    <i class="fab fa-youtube"></i>
+                    <div>
+                        <h3>YouTube Channel</h3>
+                        <small>Watch Notifications & History</small>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PowerKing PSPK. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
